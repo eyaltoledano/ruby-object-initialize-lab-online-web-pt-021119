@@ -1,9 +1,8 @@
 require 'pry'
 
 class Dog
-  def initialize(name, *breed)
+  def initialize(name, breed = "Mutt")
     @name = name
-    breed == nil ? breed = "Mutt" : breed
     @breed = breed
   end
 
