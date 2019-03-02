@@ -3,7 +3,8 @@ require 'pry'
 class Dog
   def initialize(name, *breed)
     @name = name
-    breed == nil ? breed = "Mutt" : @breed = breed
+    breed == nil ? breed = "Mutt" : breed
+    @breed = breed
   end
 
   def name=(name)
